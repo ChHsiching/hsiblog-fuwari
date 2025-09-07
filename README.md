@@ -96,4 +96,4 @@ Check out the [Contributing Guide](https://github.com/saicaca/fuwari/blob/main/C
 
 This project is licensed under the MIT License.
 
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fsaicaca%2Ffuwari.svg?type=large&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fsaicaca%2Ffuwari?ref=badge_large&issueType=license)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FChHsiching%2Fhsiblog-fuwari.svg?type=large&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2FChHsiching%2Fhsiblog-fuwari?ref=badge_large&issueType=license)
