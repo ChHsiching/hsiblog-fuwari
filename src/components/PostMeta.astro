@@ -1,10 +1,10 @@
 ---
 import { Icon } from "astro-icon/components";
+import { umamiConfig } from "../config";
 import I18nKey from "../i18n/i18nKey";
 import { i18n } from "../i18n/translation";
 import { formatDateToYYYYMMDD } from "../utils/date-utils";
 import { getCategoryUrl, getTagUrl } from "../utils/url-utils";
-import { umamiConfig } from "../config";
 
 interface Props {
 	class: string;
@@ -14,7 +14,7 @@ interface Props {
 	category: string | null;
 	hideTagsForMobile?: boolean;
 	hideUpdateDate?: boolean;
-    slug?: string;
+	slug?: string;
 }
 const {
 	published,
@@ -23,7 +23,7 @@ const {
 	category,
 	hideTagsForMobile = false,
 	hideUpdateDate = false,
-    slug,
+	slug,
 } = Astro.props;
 const className = Astro.props.class;
 ---
