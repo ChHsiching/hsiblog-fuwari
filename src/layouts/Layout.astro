@@ -105,6 +105,8 @@ const bannerOffset =
 
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<script src="/js/umami-share.js" defer></script>
+		
 		{favicons.map(favicon => (
 			<link rel="icon"
 				  href={favicon.src.startsWith('/') ? url(favicon.src) : favicon.src}
@@ -150,6 +152,9 @@ const bannerOffset =
 		<slot name="head"></slot>
 
 		<link rel="alternate" type="application/rss+xml" title={profileConfig.name} href={`${Astro.site}rss.xml`}/>
+
+		<!-- Umami Cloud 分析 -->
+		<script defer src="https://cloud.umami.is/script.js" data-website-id="1b199288-42c8-43b0-ac75-aafa07660d51"></script>
 
 	</head>
 	<body class=" min-h-screen transition " class:list={[{"lg:is-home": isHomePage, "enable-banner": enableBanner}]}

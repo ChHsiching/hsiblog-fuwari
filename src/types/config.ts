@@ -100,3 +100,10 @@ export type BlogPostData = {
 export type ExpressiveCodeConfig = {
 	theme: string;
 };
+
+export type UmamiConfig = {
+	enable: boolean;
+	baseUrl: string;
+	shareId: string;
+	timezone: string;
+};
