@@ -61,10 +61,12 @@ const config = profileConfig;
             const statsUrl = `${umamiConfig.baseUrl}/api/websites/${websiteId}/stats?startAt=0&endAt=${currentTimestamp}&unit=hour&timezone=${encodeURIComponent(umamiConfig.timezone)}&compare=false`;
             
             const statsResponse = await fetch(statsUrl, {
-                 headers: {
-                     'x-umami-share-token': token
-                 }
-             });
+                headers: {
+                    'Accept': 'application/json',
+                    'Origin': window.location.origin,
+                    'x-umami-share-token': token
+                }
+            });
             
             if (statsResponse.status === 401) {
                 // token 失效，清理缓存后重新获取一次
