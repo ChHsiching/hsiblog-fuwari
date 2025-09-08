@@ -90,7 +90,7 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 
 export const umamiConfig: UmamiConfig = {
 	enable: true,
-	baseUrl: "https://us.umami.is/api/share",
+	baseUrl: "https://us.umami.is",
 	shareId: "UPAN5X2EdjdVcV7c",
 	timezone: "Asia/Shanghai",
 };
