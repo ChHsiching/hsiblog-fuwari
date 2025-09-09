@@ -62,8 +62,6 @@ const config = profileConfig;
             
             const statsResponse = await fetch(statsUrl, {
                 headers: {
-                    'Accept': 'application/json',
-                    'Origin': window.location.origin,
                     'x-umami-share-token': token
                 }
             });

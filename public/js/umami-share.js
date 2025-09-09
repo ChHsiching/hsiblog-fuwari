@@ -17,7 +17,6 @@
 		const res = await fetch(`${baseUrl}/api/share/${shareId}`, {
 			headers: {
 				Accept: "application/json",
-				Origin: window.location.origin,
 			},
 		});
 		if (!res.ok) {
